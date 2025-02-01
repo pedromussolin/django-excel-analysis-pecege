@@ -26,14 +26,14 @@ Além disso, há um endpoint bônus para gerar uma planilha Excel com os dados p
 
 ## Tecnologias Utilizadas
 
-- **Python 3.x**
+- **Python 3**
 - **Django**
 - **MySQL**
 - **openpyxl** para manipulação de planilhas Excel
 
 ## Pré-requisitos
 
-- Python 3.x instalado.
+- Python 3 instalado.
 - MySQL instalado e em execução.
 - [pip](https://pip.pypa.io/en/stable/) para instalar dependências.
 
@@ -41,13 +41,13 @@ Além disso, há um endpoint bônus para gerar uma planilha Excel com os dados p
 
 1. Crie um banco de dados MySQL, por exemplo:
 
-
+```sql
 CREATE DATABASE pecege_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
+```
 
 2. Atualize o arquivo pecege/settings.py com as credenciais do seu banco de dados:
 
-
+```python
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -58,53 +58,54 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+```
 
 
 ## Instalação e Configuração
 
 1. Clone este repositório:
 
-
+```
 git clone https://github.com/seu_usuario/projeto-pecege.git
 cd projeto-pecege
-
+```
 
 2. Crie um ambiente virtual:
 
-
+```
 python -m venv venv
 # No Windows:
 venv\Scripts\activate
 # No Linux/Mac:
 source venv/bin/activate
-
+```
 
 3. Instale as dependências:
 
-
+```
 pip install -r requirements.txt
-
+```
 
 4. Execute as migrações do Django:
 
-
+```
 python manage.py makemigrations
 python manage.py migrate
-
+```
 
 5. Crie um superusuário para acessar o Django Admin:
 
-
+```
 python manage.py createsuperuser
-
+```
 
 ## Executando o Projeto
 
 1. Inicie o servidor Django:
 
-
+```
 python manage.py runserver
-
+```
 
 2. Acesse o endpoint de upload (utilizei o Postman):
 
