@@ -26,14 +26,14 @@ Além disso, há um endpoint bônus para gerar uma planilha Excel com os dados p
 
 ## Tecnologias Utilizadas
 
-- **Python 3.x**
+- **Python 3**
 - **Django**
 - **MySQL**
 - **openpyxl** para manipulação de planilhas Excel
 
 ## Pré-requisitos
 
-- Python 3.x instalado.
+- Python 3 instalado.
 - MySQL instalado e em execução.
 - [pip](https://pip.pypa.io/en/stable/) para instalar dependências.
 
