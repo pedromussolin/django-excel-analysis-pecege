@@ -107,7 +107,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-2. Acesse o endpoint de upload (utilizei o Postman):
+2. Acesse o endpoint de upload (Utilizei o Postman):
 
 - URL: http://127.0.0.1:8000/upload-planilha/
 - Método: POST
@@ -116,7 +116,7 @@ python manage.py runserver
   - Type: File
   - Valor: (arquivo Excel .xlsx com as colunas nome, e-mail, data de nascimento e ativo)
 
-3. Acesse o endpoint de download para baixar a planilha:
+3. Acesse o endpoint de download para baixar a planilha (Utilizei o navegador diretamente):
 
 - URL: http://127.0.0.1:8000/download-planilha/
 - Método: GET
